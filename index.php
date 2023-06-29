@@ -12,13 +12,18 @@
 	<body>
 		<ul>
 			<li>
-				<a href="modal-es.php">
-					Modal Español
+				<a href="modal-chile.php">
+					Modal Chile
 				</a>
 			</li>
 			<li>
-				<a href="modal-exp2.php">
-					Experimento 2
+				<a href="modal-brasil.php">
+					Modal Brasil
+				</a>
+			</li>
+			<li>
+				<a href="modal-eng.php">
+					Modal Eng
 				</a>
 			</li>
 		</ul>

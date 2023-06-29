@@ -34,7 +34,7 @@
                 Seleccionaste un precio único, rellena el formulario para mantener tu cotización, de caso contrario, existe la posibilidad de no volver a ver el mismo precio.
             </p>
             <button class="button" id="modaltext3">
-                Continuar
+                Rellenar
             </button>
         </div>
     </div>
