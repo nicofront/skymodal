@@ -18,7 +18,7 @@
 <body class="transition">
 
 <div class="body"></div>
-<div class="modal">
+<div class="modal" id="modal-reserva">
     <div class="modal-block">
         <div class="modal-block-head">
             <h2 id="modaltext0">

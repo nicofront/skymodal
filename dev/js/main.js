@@ -7,6 +7,10 @@ $(document).ready(function() {
        return window.location.href
      }
 
+     $('#modaltext3').click(function(){
+        $('#modal-reserva').hide();
+     });
+
      // Example
      const url = getCurrentURL();
      console.log(url);
