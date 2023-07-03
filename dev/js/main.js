@@ -19,36 +19,31 @@ $(document).ready(function() {
     elem.style.display = 'none';
   }, false);
 
-  if(url.indexOf("chile") >= 0){
-    console.log('if chile');
-    var text0 = document.getElementById("modaltext0");
-    console.log('getElementById');
-    text0.textContent = brasil[0];
-    console.log('textContent');
-    console.log('end if chile');
-  }
+  setTimeout(() => {
+   if(url.indexOf("brasil") >= 0){
+     var text0 = document.getElementById("modaltext0");
+     var text1 = document.getElementById("modaltext1");
+     var text2 = document.getElementById("modaltext2");
+     var text3 = document.getElementById("modaltext3");   
+     text0.textContent = brasil[0];
+     text1.textContent = brasil[1];
+     text2.textContent = brasil[2];
+     text3.textContent = brasil[3];
+   }
+  }, 2000);
 
-  if(url.indexOf("brasil") >= 0){
-    var text0 = document.getElementById("modaltext0");
-    var text1 = document.getElementById("modaltext1");
-    var text2 = document.getElementById("modaltext2");
-    var text3 = document.getElementById("modaltext3");   
-    text0.textContent = brasil[0];
-    text1.textContent = brasil[1];
-    text2.textContent = brasil[2];
-    text3.textContent = brasil[3];
-  }
-
-  if(url.indexOf("eng") >= 0){
-    var text0 = document.getElementById("modaltext0");
-    var text1 = document.getElementById("modaltext1");
-    var text2 = document.getElementById("modaltext2");
-    var text3 = document.getElementById("modaltext3");   
-    text0.textContent = eng[0];
-    text1.textContent = eng[1];
-    text2.textContent = eng[2];
-    text3.textContent = eng[3];
-  }
+  setTimeout(() => {
+   if(url.indexOf("eng") >= 0){
+     var text0 = document.getElementById("modaltext0");
+     var text1 = document.getElementById("modaltext1");
+     var text2 = document.getElementById("modaltext2");
+     var text3 = document.getElementById("modaltext3");   
+     text0.textContent = eng[0];
+     text1.textContent = eng[1];
+     text2.textContent = eng[2];
+     text3.textContent = eng[3];
+   }
+  }, 2000);
 
 
 }); //end ready
