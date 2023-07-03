@@ -20,6 +20,8 @@ $(document).ready(function() {
   }, false);
 
   setTimeout(() => {
+   var modalReserva = document.getElementById("modal-reserva");
+   modalReserva.classList.add("active");
    if(url.indexOf("brasil") >= 0){
      var text0 = document.getElementById("modaltext0");
      var text1 = document.getElementById("modaltext1");
@@ -30,9 +32,6 @@ $(document).ready(function() {
      text2.textContent = brasil[2];
      text3.textContent = brasil[3];
    }
-  }, 2000);
-
-  setTimeout(() => {
    if(url.indexOf("eng") >= 0){
      var text0 = document.getElementById("modaltext0");
      var text1 = document.getElementById("modaltext1");
