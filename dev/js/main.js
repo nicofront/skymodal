@@ -1,34 +1,57 @@
 $(document).ready(function() {
 
-     let brasil = ["Reserve seus assentos", "Reserve seus assentos", "Você selecionou um preço único, preencha o formulário para manter sua cotação, caso contrário, existe a possibilidade de não ver o mesmo preço novamente.", "Preencher"]; 
-     let eng = ["Reserve your seats", "Reserve your seats", "You have selected a unique price, please fill out the form to hold your quote, otherwise, there is a possibility that you may not see the same price again.", "Fill out"]; 
+  var brasil = ["Reserve seus assentos", "Reserve seus assentos", "Você selecionou um preço único, preencha o formulário para manter sua cotação, caso contrário, existe a possibilidade de não ver o mesmo preço novamente.", "Preencher"]; 
+  var eng = ["Reserve your seats", "Reserve your seats", "You have selected a unique price, please fill out the form to hold your quote, otherwise, there is a possibility that you may not see the same price again.", "Fill out"]; 
 
-     function getCurrentURL () {
-       return window.location.href
-     }
+  const url = getCurrentURL();
+  console.log(url);
+  console.log("Chile " + url.indexOf("chile"));
+  console.log("Brasil " + url.indexOf("brasil"));
+  console.log("ENG " + url.indexOf("eng"));
 
-     $('#modaltext3').click(function(){
-        $('#modal-reserva').hide();
-     });
+  var text0 = document.getElementById("modaltext0");
+  var text1 = document.getElementById("modaltext1");
+  var text2 = document.getElementById("modaltext2");
+  var text3 = document.getElementById("modaltext3");
 
-     // Example
-     const url = getCurrentURL();
-     console.log(url);
-     console.log("Brasil " + url.indexOf("brasil"));
-     console.log("ENG " + url.indexOf("eng"));
+  function getCurrentURL () {
+    return window.location.href
+  }
 
-     if(url.indexOf("brasil") >= 0){
-        $('#modaltext0').text(brasil[0]);
-        $('#modaltext1').text(brasil[1]);
-        $('#modaltext2').text(brasil[2]);
-        $('#modaltext3').text(brasil[3]);
-     }
+  document.addEventListener('click', function (event) {
+    const elem = document.getElementById("modal-reserva");
+    if (!event.target.matches('#modaltext3')) return;
+    elem.style.display = 'none';
+  }, false);
 
-     if(url.indexOf("eng") >= 0){
-        $('#modaltext0').text(eng[0]);
-        $('#modaltext1').text(eng[1]);
-        $('#modaltext2').text(eng[2]);
-        $('#modaltext3').text(eng[3]);
-     }
+  if(url.indexOf("chile") >= 0){
+    console.log('if chile');
+    var text0 = document.getElementById("modaltext0");
+    text0.textContent = brasil[0];
+    console.log('text:' + text0);
+  }
+
+  if(url.indexOf("brasil") >= 0){
+    var text0 = document.getElementById("modaltext0");
+    var text1 = document.getElementById("modaltext1");
+    var text2 = document.getElementById("modaltext2");
+    var text3 = document.getElementById("modaltext3");   
+    text0.textContent = brasil[0];
+    text1.textContent = brasil[1];
+    text2.textContent = brasil[2];
+    text3.textContent = brasil[3];
+  }
+
+  if(url.indexOf("eng") >= 0){
+    var text0 = document.getElementById("modaltext0");
+    var text1 = document.getElementById("modaltext1");
+    var text2 = document.getElementById("modaltext2");
+    var text3 = document.getElementById("modaltext3");   
+    text0.textContent = eng[0];
+    text1.textContent = eng[1];
+    text2.textContent = eng[2];
+    text3.textContent = eng[3];
+  }
+
 
 }); //end ready
