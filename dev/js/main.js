@@ -9,11 +9,6 @@ $(document).ready(function() {
   console.log("Brasil " + url.indexOf("brasil"));
   console.log("ENG " + url.indexOf("eng"));
 
-  var text0 = document.getElementById("modaltext0");
-  var text1 = document.getElementById("modaltext1");
-  var text2 = document.getElementById("modaltext2");
-  var text3 = document.getElementById("modaltext3");
-
   function getCurrentURL () {
     return window.location.href
   }
@@ -27,8 +22,10 @@ $(document).ready(function() {
   if(url.indexOf("chile") >= 0){
     console.log('if chile');
     var text0 = document.getElementById("modaltext0");
+    console.log('getElementById');
     text0.textContent = brasil[0];
-    console.log('text:' + text0);
+    console.log('textContent');
+    console.log('end if chile');
   }
 
   if(url.indexOf("brasil") >= 0){
