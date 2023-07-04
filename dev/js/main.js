@@ -4,13 +4,14 @@ $(document).ready(function() {
   setInterval(() => {
     let currUrl = window.location.href;
     if (currUrl != prevUrl) {
+      if(true || currUrl.indexOf('/pago') >= 0){
+         if(prevUrl.indexOf('flujo-compra') >=0){
+            showModal();
+         }
+      }
       // URL changed
       prevUrl = currUrl;
       console.log('URL changed: ' + currUrl);
-
-      if(true || currUrl.indexOf('/pago') >= 0){
-         showModal();
-      }
     }
   }, 60);
 
