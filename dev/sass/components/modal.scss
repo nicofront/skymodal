@@ -28,6 +28,7 @@
 		.modal-block-head{
 			background: #662374; 
 			padding: 16px 10px;
+			position: relative;
 			h2{
 				margin: 0;
 				color: #FFF;
@@ -35,6 +36,16 @@
 				line-height: 20px;
 				font-weight: 400; 
 				text-align: center;
+			}
+			img{
+				position: absolute;
+				right: 10px;
+				top: 50%;
+				transform: translate(0,-50%);
+				display: inline-block;
+				text-decoration: none;
+				cursor: pointer;
+				border-radius: 50%;
 			}
 		}
 		.modal-block-body{
