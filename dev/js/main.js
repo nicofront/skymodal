@@ -1,19 +1,26 @@
 $(document).ready(function() {
 
   let prevUrl = '';
-  setInterval(() => {
+
+  const modalInterval = setInterval(modalTimer, 60);
+
+  function modalTimer() {
     let currUrl = window.location.href;
     if (currUrl != prevUrl) {
       if(true || currUrl.indexOf('/pago') >= 0){
-         if(prevUrl.indexOf('flujo-compra') >=0){
+         if(true || prevUrl.indexOf('flujo-compra') >=0){
             showModal();
+            stopInterval(modalInterval);
          }
       }
-      // URL changed
       prevUrl = currUrl;
       console.log('URL changed: ' + currUrl);
     }
-  }, 60);
+  }
+
+  function stopInterval() {
+    clearInterval(modalInterval);
+  }
 
   function getCurrentURL () {
     return window.location.href
@@ -61,7 +68,7 @@ $(document).ready(function() {
       text2.textContent = eng[2];
       text3.textContent = eng[3];
     }
-   }, 5000);
+   }, 8000);
 
   } // end showModal
 
