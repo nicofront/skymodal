@@ -1,15 +1,51 @@
 $(document).ready(function() {
 
   let prevUrl = '';
+  let inactivitySwitch = 1;
+  let inactivityLoop = 8000;
 
-  const modalInterval = setInterval(modalTimer, 60);
+  var inactivityTime = function () {
+      var time;
+      window.onload = resetTimer;
+      // DOM Events
+      document.onmousemove = resetTimer;
+      document.onkeydown = resetTimer;
+
+      let form = document.querySelector('form');
+      form.addEventListener('input', function (event) {
+        console.log('form');
+        inactivityLoop = 5000;
+      });
+      let boxes = Array.from(document.getElementsByClassName('el-select-dropdown__item'));
+      boxes.forEach(box => {
+        box.addEventListener('click', function handleClick(event) {
+          console.log('select');
+          inactivityLoop = 5000;
+        });
+      });
+
+      function modalTrigger() {
+          if(inactivitySwitch){
+            inactivitySwitch = 0;
+            console.log(inactivityLoop);
+            showModal();
+          }
+      }
+
+      function resetTimer() {
+          clearTimeout(time);
+          time = setTimeout(modalTrigger, inactivityLoop)
+      }
+  };
+
+  const modalInterval = setInterval(modalTimer, 10);
 
   function modalTimer() {
     let currUrl = window.location.href;
     if (currUrl != prevUrl) {
       if(true || currUrl.indexOf('/pago') >= 0){
          if(true || prevUrl.indexOf('flujo-compra') >=0){
-            showModal();
+            inactivityTime();
             stopInterval(modalInterval);
          }
       }
@@ -68,7 +104,7 @@ $(document).ready(function() {
       text2.textContent = eng[2];
       text3.textContent = eng[3];
     }
-   }, 8000);
+   }, 10);
 
   } // end showModal
 
