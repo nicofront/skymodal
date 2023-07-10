@@ -3,16 +3,29 @@ $(document).ready(function() {
   let prevUrl = '';
   let inactivitySwitch = 1;
   let inactivityLoop = 8000;
+  // inactivityLoop = 3000;
 
   var inactivityTime = function () {
       var time;
       window.onload = resetTimer;
       // DOM Events
-      document.onmousemove = resetTimer;
-      document.onmousedown = resetTimer;
-      document.onkeydown = resetTimer;
-      document.ontouchstart = resetTimer;
-      document.onclick = resetTimer;
+      document.addEventListener('onmousemove', resetTimer, true);
+      document.addEventListener('onmousedown', resetTimer, true);
+      // document.onmousemove = resetTimer;
+      // document.onmousedown = resetTimer;
+
+      document.addEventListener('onkeydown', resetTimer, true);
+      // document.onkeydown = resetTimer;
+
+      // document.ontouchstart = resetTimer;
+      // document.ontouchend = resetTimer;
+      // document.ontouchcancel = resetTimer;
+      document.addEventListener('ontouchstart', resetTimer, true);
+      document.addEventListener('ontouchend', resetTimer, true);
+      document.addEventListener('ontouchcancel', resetTimer, true);
+
+
+      document.addEventListener('click', resetTimer, true);
       document.addEventListener('scroll', resetTimer, true);
 
       let form = document.querySelector('form');
