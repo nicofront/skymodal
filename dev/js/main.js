@@ -9,18 +9,22 @@ $(document).ready(function() {
       window.onload = resetTimer;
       // DOM Events
       document.onmousemove = resetTimer;
+      document.onmousedown = resetTimer;
       document.onkeydown = resetTimer;
+      document.ontouchstart = resetTimer;
+      document.onclick = resetTimer;
+      document.addEventListener('scroll', resetTimer, true);
 
       let form = document.querySelector('form');
       form.addEventListener('input', function (event) {
         console.log('form');
-        inactivityLoop = 5000;
+        inactivityLoop = 12000;
       });
       let boxes = Array.from(document.getElementsByClassName('el-select-dropdown__item'));
       boxes.forEach(box => {
         box.addEventListener('click', function handleClick(event) {
           console.log('select');
-          inactivityLoop = 5000;
+          inactivityLoop = 12000;
         });
       });
 
@@ -63,8 +67,8 @@ $(document).ready(function() {
   }
 
   function showModal () {
-   var brasil = ["Reserve seus assentos", "Reserve seus assentos", "Você selecionou um preço único, preencha o formulário para manter sua cotação, caso contrário, existe a possibilidade de não ver o mesmo preço novamente.", "Preencher"]; 
-   var eng = ["Reserve your seats", "Reserve your seats", "You have selected a unique price, please fill out the form to hold your quote, otherwise, there is a possibility that you may not see the same price again.", "Fill out"]; 
+   var brasil = ["Reserve seus assentos", "Reserve seu voo", "Você selecionou um preço único, preencha o formulário para manter sua cotação, caso contrário, existe a possibilidade de não ver o mesmo preço novamente.", "Aceitar"]; 
+   var eng = ["Reserve your seats", "Book your flight", "You have selected a unique price, please fill out the form to hold your quote, otherwise, there is a possibility that you may not see the same price again.", "Accept"]; 
 
    const url = getCurrentURL();
    console.log(url);
