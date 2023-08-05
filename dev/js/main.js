@@ -3,7 +3,7 @@ $(document).ready(function() {
   let prevUrl = '';
   let inactivitySwitch = 1;
   let inactivityLoop = 8000;
-  // inactivityLoop = 3000;
+  inactivityLoop = 300;
 
   var inactivityTime = function () {
       var time;
