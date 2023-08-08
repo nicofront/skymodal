@@ -65,10 +65,18 @@
 				margin-bottom: 12px;
 				font-family: 'Roboto';
 			}
+			h4{
+				margin: 0;
+				margin-bottom: 12px;
+				color: #781878;
+				font-weight: 600;
+				font-size: 28px;
+				line-height: 30px;
+			}
 			p{
 				width: 537px;
 				max-width: 100%;
-				color: #434343;
+				color: #000000;
 				font-size: 16px; 
 				line-height: 21px;
 				margin: 0 auto;
@@ -85,7 +93,7 @@
 				font-size: 18px;
 				line-height: 22px;
 				color: #fff;
-				width: 120px;
+				max-width: 100%;
 			}
 		}
 	}

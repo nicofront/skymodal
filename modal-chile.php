@@ -29,13 +29,16 @@
         <div class="modal-block-body">
             <img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANWSURBVHgB7ZrNceIwFMcfTGaS3OhgvRWEEkwFG24JHBYqSKgAqGBJBbt7AYYLbAWYCsJWEHcQbsAByP+BPGOEjCUD4SP6zXhkyYqtv97T0wchslgsFovFYrEchlTUg1ar5SKp4nLpjEilUsPFYlF5fHz0lM9VhUJsn86bnEp0WlUTPfSLzp+qqvBKVQi3yIbuR0iGdB5kYayMuHdVFa4onuHDw0OOzgAMRR6G7rY6afpiWMGXjhV86egIznS73QztAKKn02w27+kEiBWMeS07mUxeudFkCK/Y2u32O27fMJ93kf9NR0bXpR1cfVPRvLRDh4UXLaVji45aWlaQ+FKxg6ufwL3rUr4Eq7/uOkySohRcKBQasM53Fi6WlgHOdDqtkgFiAe+Fy3iY4D39Y4je6tIsHI3Lh8uQf04wnstywbFEx45hMQ5fpOISGYB3+LTp2kcRrRW00KiaVPSTDEGkb0jDY8lni9YSXC6XR1K0dUwbyO+Yz+d11TOTqW/XjtFeacE6/8N5NND4wyImRO2tHVJMfZ1OJ4tFC8eNPs/p+O470m5S4Tr74b2CjuMpL+r4yOFnEPiCene47mezWQbp8iE6K0jvx+PxALcNMsRkLf0tnBGBaA2dXldNUxIOBPIRUyl0erFBOp2+owRoCRZu5gZ5PhmU67CbIfi8oa7OPP2XdoCDHzqjnuBPtV16TQSCz0CugAbwGOcNQo076ObmppLP55dRmfPshmjoDz4v22a5KIKzNXz7H979J3i3KbGCMZ54CipJH98YOzzt3N7ePgkxJeR549BjobRy02W9YBzqwJ7EnYu0d319PUwqMsxWwWgwC1gTx4sQRFtfrsvTDizJC5TAG9iqz2SAsCJ30gBW7O1DoIxSME8D7H74sCs98mHFWsS7ZCvHEnZT/I1XLBYPfhwcdS6tOoj3ceW29TpbGZ1Vj/j74N0+C9ynm5qgG7R8Wv104cdV5MUFXPuJVnPqp7ipCbGCOXDAEjmThoptZRa3Hg7xPTohdCw8MrUKrNxD0qMTxJ5aXjpW8KXz5QTrROms+N315BEbk611ogR7JLaDYpno0hkQFqvawjJRLp1or3lKiB8TNlAKFqcSuaheOmXQZo8i/oPHYrFYLBaLxXJIPgCNSrowBQNJiQAAAABJRU5ErkJggg==" alt="Seats">
             <h3 id="modaltext1">
-                Reserva tu vuelo
+                ¡No pierdas tu oportunidad! Te quedan
             </h3>
+            <h4>
+                00:02:30
+            </h4>
             <p id="modaltext2">
-                Seleccionaste un precio único, rellena el formulario para mantener tu cotización, de caso contrario, existe la posibilidad de no volver a ver el mismo precio.
+                Para adquirir tu pasaje al precio seleccionado.
             </p>
             <button class="button" id="modaltext3" onclick="window.dataLayer.push({ 'event': 'interacciones', 'evento_interactivo_categoria': 'modal rpp', 'evento_interactivo_accion': 'click', 'evento_interactivo_etiqueta': 'aceptar'});">
-                Aceptar
+                Continuar la compra
             </button>
         </div>
     </div>

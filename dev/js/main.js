@@ -11,15 +11,9 @@ $(document).ready(function() {
       // DOM Events
       document.addEventListener('onmousemove', resetTimer, true);
       document.addEventListener('onmousedown', resetTimer, true);
-      // document.onmousemove = resetTimer;
-      // document.onmousedown = resetTimer;
 
       document.addEventListener('onkeydown', resetTimer, true);
-      // document.onkeydown = resetTimer;
 
-      // document.ontouchstart = resetTimer;
-      // document.ontouchend = resetTimer;
-      // document.ontouchcancel = resetTimer;
       document.addEventListener('ontouchstart', resetTimer, true);
       document.addEventListener('ontouchend', resetTimer, true);
       document.addEventListener('ontouchcancel', resetTimer, true);
@@ -48,7 +42,6 @@ $(document).ready(function() {
             showModal();
           }
       }
-
       function resetTimer() {
           clearTimeout(time);
           time = setTimeout(modalTrigger, inactivityLoop)
@@ -80,14 +73,9 @@ $(document).ready(function() {
   }
 
   function showModal () {
-   var brasil = ["Reserve seus assentos", "Reserve seu voo", "Você selecionou um preço único, preencha o formulário para manter sua cotação, caso contrário, existe a possibilidade de não ver o mesmo preço novamente.", "Aceitar"]; 
-   var eng = ["Reserve your seats", "Book your flight", "You have selected a unique price, please fill out the form to hold your quote, otherwise, there is a possibility that you may not see the same price again.", "Accept"]; 
 
    const url = getCurrentURL();
    console.log(url);
-   console.log("Chile " + url.indexOf("chile"));
-   console.log("Brasil " + url.indexOf("brasil"));
-   console.log("ENG " + url.indexOf("eng"));
 
    document.addEventListener('click', function (event) {
      const elem = document.getElementById("modal-reserva");
@@ -99,28 +87,7 @@ $(document).ready(function() {
    setTimeout(() => {
     var modalReserva = document.getElementById("modal-reserva");
     modalReserva.classList.add("active");
-    if(url.indexOf("brasil") >= 0){
-      console.log('url brasil');
-      var text0 = document.getElementById("modaltext0");
-      var text1 = document.getElementById("modaltext1");
-      var text2 = document.getElementById("modaltext2");
-      var text3 = document.getElementById("modaltext3");   
-      text0.textContent = brasil[0];
-      text1.textContent = brasil[1];
-      text2.textContent = brasil[2];
-      text3.textContent = brasil[3];
-    }
-    if(url.indexOf("eng") >= 0){
-      console.log('url eng');
-      var text0 = document.getElementById("modaltext0");
-      var text1 = document.getElementById("modaltext1");
-      var text2 = document.getElementById("modaltext2");
-      var text3 = document.getElementById("modaltext3");   
-      text0.textContent = eng[0];
-      text1.textContent = eng[1];
-      text2.textContent = eng[2];
-      text3.textContent = eng[3];
-    }
+
    }, 10);
 
   } // end showModal
