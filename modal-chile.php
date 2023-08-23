@@ -21,24 +21,30 @@
 <div class="modal" id="modal-reserva">
     <div class="modal-block">
         <div class="modal-block-head">
-            <h2 id="modaltext0">
+            <!-- <h2 id="modaltext0">
                 Precio único
-            </h2>
-            <img id="modalclose" onclick="window.dataLayer.push({ 'event': 'interacciones', 'evento_interactivo_categoria': 'modal rpp', 'evento_interactivo_accion': 'click', 'evento_interactivo_etiqueta': 'aceptar'});" src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADQklEQVRIx7WW0U/bVRTHP+fSEExaxtKNTcNCMx0PmFZm8cGAmQTrwtx00WG2uIdFTSZ/wOgcPvAwOyjvVozpiy4ztokR1iymJVLItpeSACVsAUdY5EG6bCmMxIR0v+tD+2tAfqWI+n26uffczzn33N+55ydso66G7sOGoc8C7RrdiKYWACEjyCwwopT8EJoLLpRiiNXkZw3dLm3ofq31GUCxvQwRiYoS/9dzwcWyDi4euXReGzoE2G2VNrwdbpp8buo9ddTUVgOQzazycHqJyXiaiVtpcus5gDVR0jU4P/B9SQcXX7rUrbXuB/Ce8ND5+Sn2Pl+zbfjZ5RUigWFSsak8UMQ/+NtA0Fyv2BS51l+JCOd6T/OB/yTPOaoopyp7Fd4OD9VOBzPJ+2itfc37Wh5MPLkzXXRQyHkMqDzXe5o3z7eUBf9dLs8hHE476dF7oHn7tf2tN1KPb2cVgDZ0P2D3nvDsCm7q2Eev0/zOKwD2AhPpaug+/OyZMW+rtKmrI/6yOS+n7PIKPW195NZzRkWFOqIK37nydrgt4T1t14gEhrbMR/tu0tN2bct8zYE9eDvcAMow9FkFtAM0+dyWER097iYRHufHqz8X5yKBIeLfJmnyvVxij8cctts0uhGg3lNnaXzm8km0YZAIjwMgSkiEx2m/0ErnlXct97jceZZGN9rM8jeLyEp5kJAIj+XDutDKh1+8V9K+er+Dgofacs/ABumdm26QDSGD5mA2s4rzhb2WRpHAUDEtolTxJKVOsfroaX4gZGyCzGr0wYfTS5YOon03i/CNwER4DFFieQ+L6aUCX2YVMAIwGU9bRpOKTfHWx29sgndeOYXv02NM3LLeMxmfMYcjmwrty18vU3Ngz65ybWpLoYXmggsiEs2t54gEhv8VPH9fw+TWc4hINDQXXFAAosQPrKViUySv3901PHn9rvlsrxWY+dc09fh2tnlfy+9o3p9J3sfhtOPyHPrH8Bu9P1EI+JPB+YGxogOAiSd3ppudLX9qrX3p0Xv88SDDi6/WU2Xfvidkl1f4rifKL9+M5uH5hhMy13fUMo8e9+By1xUrdPXRUxbTS0zGZ0jFpnbeMk39r01/o/6L35a/AHNyarTZdUbvAAAAAElFTkSuQmCC" alt="Close">
+            </h2> -->
+            <img id="modalclose" onclick="window.dataLayer.push({ 'event': 'interacciones', 'evento_interactivo_categoria': 'modal rpp', 'evento_interactivo_accion': 'click', 'evento_interactivo_etiqueta': 'aceptar'});" src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD/SURBVHgB7ZXNCYQwEIUnXvS4JaSFLcESPIonK/PoMSVsC5ZgCTagbLJkQZf8vAkKi+RBkETnfZO/kSgrK+sfNI6jNO2KGBEz0Y+X7dZt284EgNEYAZhIOzTHzLgxBeGSxti3nA4wCSGWqqoWnyG67HI3PNPPbDzgqSzLummaNDiSQCoYgkcS6HUbUsAwPJDA0YwBZsFjCXDBRpzTTvaQ9U6joug5YDbcznxwvVvXVXEr4al7TkAh2guaue86bdv2tMCvPt+hKxCFh+5x13WT7tapCbArnOtUo5UQhnMrV0oC8GmP3WMLOGzBKT8WY4IWkJSYoJlS6nF1TFbWvfUGSx2upCxfcswAAAAASUVORK5CYII=" alt="Close">
         </div>
         <div class="modal-block-body">
-            <img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANWSURBVHgB7ZrNceIwFMcfTGaS3OhgvRWEEkwFG24JHBYqSKgAqGBJBbt7AYYLbAWYCsJWEHcQbsAByP+BPGOEjCUD4SP6zXhkyYqtv97T0wchslgsFovFYrEchlTUg1ar5SKp4nLpjEilUsPFYlF5fHz0lM9VhUJsn86bnEp0WlUTPfSLzp+qqvBKVQi3yIbuR0iGdB5kYayMuHdVFa4onuHDw0OOzgAMRR6G7rY6afpiWMGXjhV86egIznS73QztAKKn02w27+kEiBWMeS07mUxeudFkCK/Y2u32O27fMJ93kf9NR0bXpR1cfVPRvLRDh4UXLaVji45aWlaQ+FKxg6ufwL3rUr4Eq7/uOkySohRcKBQasM53Fi6WlgHOdDqtkgFiAe+Fy3iY4D39Y4je6tIsHI3Lh8uQf04wnstywbFEx45hMQ5fpOISGYB3+LTp2kcRrRW00KiaVPSTDEGkb0jDY8lni9YSXC6XR1K0dUwbyO+Yz+d11TOTqW/XjtFeacE6/8N5NND4wyImRO2tHVJMfZ1OJ4tFC8eNPs/p+O470m5S4Tr74b2CjuMpL+r4yOFnEPiCene47mezWQbp8iE6K0jvx+PxALcNMsRkLf0tnBGBaA2dXldNUxIOBPIRUyl0erFBOp2+owRoCRZu5gZ5PhmU67CbIfi8oa7OPP2XdoCDHzqjnuBPtV16TQSCz0CugAbwGOcNQo076ObmppLP55dRmfPshmjoDz4v22a5KIKzNXz7H979J3i3KbGCMZ54CipJH98YOzzt3N7ePgkxJeR549BjobRy02W9YBzqwJ7EnYu0d319PUwqMsxWwWgwC1gTx4sQRFtfrsvTDizJC5TAG9iqz2SAsCJ30gBW7O1DoIxSME8D7H74sCs98mHFWsS7ZCvHEnZT/I1XLBYPfhwcdS6tOoj3ceW29TpbGZ1Vj/j74N0+C9ynm5qgG7R8Wv104cdV5MUFXPuJVnPqp7ipCbGCOXDAEjmThoptZRa3Hg7xPTohdCw8MrUKrNxD0qMTxJ5aXjpW8KXz5QTrROms+N315BEbk611ogR7JLaDYpno0hkQFqvawjJRLp1or3lKiB8TNlAKFqcSuaheOmXQZo8i/oPHYrFYLBaLxXJIPgCNSrowBQNJiQAAAABJRU5ErkJggg==" alt="Seats">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAoCAYAAABaW2IIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAROSURBVHgBxVpLUuMwEO0Eis8uc4PMCRhOQHKCSTYUsAGfgMwJcE6QcIJkFnyKTcIJEm6QOcGYE0x2wAKY9wbJoyh2Ylu2eVUuR7Ks7uduSa1WKlIyRqNR7fn5+VulUvmOYv39/Z2/a7jXdBuUZyjPeX97e3vY3d2dttvtuaRERUrCzc1NA7dTKNwyiaTAcGNj4/Lw8HCW9IXCyYFUHbcBrobkgyGu7vHxcbCuYaHkbm9vz3HzV1kKlqS7Bbi027FtPYF1fRDsrmpQCDmOq5eXlwEUbC0J/CAzxrOHnZ2dcdxYosXVeGQfp1Ft8Gy8vb3txfWROzlFbELFLEXmqLsEoX7ayUG59hmuC/sZJx0QbEb1mSu5FcSmqPOSjJNViBu/cQQ3JUcoV1wgRmuBVEdygPo4TZD0xbAiZVI2frbN9qHlrq+vO/gC5+sEUNmTk5O+XQ+BFOZb1ZzVfCkANkGl2w9Tt6r+wYUUt/q6S7WzBfGZb1UXRoxg3/zQZl21Wr1QuvxDXm658AU5xo6OjnxJCCj0Wz4+HhFA8a9J3oOVOnh3T9QYVMsH3bPJcmg5Fe4E6y62MwVcXV1xjJ2ZdZw8pDx4annRaKho6L/llK/2JSXgCvY47brOimlAWSBD9wy9B2S5Lk6r4oDBYEA3OLOqh1IyEIj3Leu1uCw5kcPa0jDLEDAs02oanucxQLjXZY497jycyMnyYnovn4epWWDo50QOZPbMMvZeibcjeQOWGptl6FZ3ImdtMOef4ZIadE1r3O1tqjUmMcwIBZ2ZoVYgnwx4TqB1YrDBpaCepoOoCEUhdRogrv+7u7tvaXbcxruhDvQq1wklF5iBAZWCBSYkKI6oJolK4iIUy8ez5EV0P4zmA13OStDevTvt58yYkEQRT36RjFAB70SMYcI+EQE1k7oo0hp/NEHu8VyXglAoO2VUIBmh92qS0YIqLWHKnzuRg+BHs4y1piUOcCFob5Lxzi9Xy9kL54E4IitBleQNgRynW+AMS82iAlZxRBzB19fXXlR7I4EUYmtry41cTMDakRxgE+T4RuasHdN8IfXHAJ7JIuccitoYToyOSXg/r1CMVkGfvbj8pLLaQpQFl9znDLtpKKVzKCthRyggMYWAqcRs9V2hPlJ7RZOBLOo31EtHXhGKZ2/1seb0pGCojFvDrMPHDVPszjkUgl8Xs1nXEtJRwgvBilRioAu5ZpxhrVHE+cDaA4sMcnr8eGYdlyVESAvum2vG+enpycPAr1tbIV9NOrml00GsYdardPpSxi33gxAmjSBoYhHU8HH9TEtSncaeo8/OUnBc1kGIBgniqDfyCEthyPWRisURVYT4/kHcaWzpR1gmovL5Swqow0c9Ueklad2BJSewqDOLhXZSMIxzhFPJAWmOw0o78GfaHXszznCpSRqnsRyv08TvScngWMKs2sDPBsgyNVgztyuKCC/+TeOR4wox5SzLXzX+AuXEp9NJZDUeAAAAAElFTkSuQmCC" alt="Seats">
             <h3 id="modaltext1">
-                ¡No pierdas tu oportunidad! Te quedan
+                Completa tus datos en los próximos:
             </h3>
             <div id="countdown">
-              <h4 id='tiles'></h4>
+              <h4>
+                <img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIbSURBVHgBpVY7UsMwEF2ZzMRlSmZozAkIJ8A+AcMJCCeAEmgiGkJJToA5AdwAcwJyA0QBQ5kyKYh4a6/AEfEnYWd2pEi7eqv16m0UbSDn2+exUuoQ0xgaWWt7vI61CeYTTO9vPm+yVb6K1hAARRjuBIgEZAqQKcaeAxZJoVcANhsBXu5c9u3CPsmhBgDjbrebaqOnXkAxdAjluQm2gqPr9+vJWoB8EABecjBF47Ab6jJQhY9mYM6AClTiQJVsPlEpTSKJ+w7Yf5WIOUWaWooDhZowDPc5yED23njRU+fk0pOuAuNDoVYOXxKxz9h/Npud8VpHNgZULW7vijaTE+grUnuKUQd1llz+VNwu86utrYhfxt+fC68WEFH1ZfpM/5Pcf/G16Hc4/xVGSeldGWoSRb2aXSNjFNDfYjHUBsDhBKp4Y5ZOL7YvjpvsO8jxbtWmPOQ8siqb0cfoEXZcGHeWbApQGn2O7j2z3J/fZO03BEs4hjios0PQKRXVSALq3zT3Z56tBWR24KgwjUu3bQOauPUS3Rkmko4sVjINohpTwRZM2kkTKM4yXqcYypinuZFpQEm38jsW1qEG0Ix+b8f2Aypup3mtFXl7nULDuZZ1dKR78/l8CPszaV/7jjjWak94uA8kbYcKqltiIAEaAIBpLPI7xVqALFIAGvpThTUNOIOebNyAPeAYwwAgewDpO2AMBhX6jDJ9rPqL8Q0l4SI9yeoEUAAAAABJRU5ErkJggg==" alt="Clock">
+                <span class="cd-mobile">Tienes</span>
+                <span id='tiles'></span>
+                <span class="cd-mobile">para completar tus datos y reservar tu vuelo</span>
+                <span class="cd-mobile cd-normal">(podrás pagar cuando quieras en el plazo que enviaremos a tu correo).</span>
+              </h4>
             </div>
             <p id="modaltext2">
-                Para adquirir tu pasaje al precio seleccionado.
+                Tu vuelo quedará reservado y podrás pagar cuando quieras en el plazo que enviaremos a tu correo.
             </p>
-            <button class="button" id="modaltext3" onclick="window.dataLayer.push({ 'event': 'interacciones', 'evento_interactivo_categoria': 'modal rpp', 'evento_interactivo_accion': 'click', 'evento_interactivo_etiqueta': 'aceptar'});">
-                Continuar la compra
+            <button class="button" id="modaltext3">
+                Si, quiero asegurar mi precio
             </button>
         </div>
     </div>

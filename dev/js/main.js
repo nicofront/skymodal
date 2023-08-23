@@ -117,7 +117,7 @@ $(document).ready(function() {
      const elem = document.getElementById("modal-reserva");
      if (! (event.target.matches('#modaltext3') || event.target.matches('#modalclose')) ) return;
      var modalReserva = document.getElementById("modal-reserva");
-     modalReserva.classList.remove("active");
+     modalReserva.classList.add("change");
    }, false);
 
    setTimeout(() => {
