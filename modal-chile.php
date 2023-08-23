@@ -31,9 +31,9 @@
             <h3 id="modaltext1">
                 ¡No pierdas tu oportunidad! Te quedan
             </h3>
-            <h4>
-                00:02:30
-            </h4>
+            <div id="countdown">
+              <h4 id='tiles'></h4>
+            </div>
             <p id="modaltext2">
                 Para adquirir tu pasaje al precio seleccionado.
             </p>
