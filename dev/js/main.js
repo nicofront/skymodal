@@ -20,7 +20,10 @@ $(document).ready(function() {
     var current_date = new Date().getTime();
     var seconds_left = (target_date - current_date) / 1000;
 
-    if(seconds_left <= 0) seconds_left = 0;
+    if(seconds_left <= 0) {
+      seconds_left = 0;
+      window.location.href = "http://www.w3schools.com";
+    }
 
     days = pad( parseInt(seconds_left / 86400) );
     seconds_left = seconds_left % 86400;
