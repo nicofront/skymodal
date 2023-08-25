@@ -3,7 +3,7 @@ $(document).ready(function() {
   let prevUrl = '';
   let inactivitySwitch = 1;
   let inactivityLoop = 5000;
-  // inactivityLoop = 300;
+  inactivityLoop = 3000;
 
   var target_date = 0; // set the countdown date
   var days, hours, minutes, seconds; // variables for time units
@@ -45,7 +45,8 @@ $(document).ready(function() {
     document.addEventListener('onmousemove', resetTimer, true);
     document.addEventListener('onmousedown', resetTimer, true);
 
-    document.addEventListener('onkeydown', resetTimer, true);
+    document.addEventListener('keydown', resetTimer, true);
+    document.addEventListener('keyup', resetTimer, true);
 
     document.addEventListener('ontouchstart', resetTimer, true);
     document.addEventListener('ontouchend', resetTimer, true);
@@ -54,23 +55,25 @@ $(document).ready(function() {
     document.addEventListener('click', resetTimer, true);
     document.addEventListener('scroll', resetTimer, true);
 
-    let form = document.querySelector('form');
-    form.addEventListener('input', function (event) {
-      console.log('form');
-      inactivityLoop = 15000;
-    });
-    let boxes = Array.from(document.getElementsByClassName('el-select-dropdown__item'));
-    boxes.forEach(box => {
-      box.addEventListener('click', function handleClick(event) {
-        console.log('select');
-        inactivityLoop = 15000;
-      });
-    });
+    // let form = document.querySelector('form');
+    // form.addEventListener('input', function (event) {
+    //   console.log('form');
+    //   inactivityLoop = 15000;
+    // });
+    // let boxes = Array.from(document.getElementsByClassName('el-select-dropdown__item'));
+    // boxes.forEach(box => {
+    //   box.addEventListener('click', function handleClick(event) {
+    //     console.log('select');
+    //     inactivityLoop = 15000;
+    //   });
+    // });
 
     function modalTrigger() {
       if(inactivitySwitch){
         inactivitySwitch = 0;
         target_date = new Date().getTime() + (1000*60*5);
+        target_date = new Date().getTime() + (1000*60*500);
+        //target date
         console.log(inactivityLoop);
         showModal();
       }
