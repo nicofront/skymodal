@@ -3,7 +3,7 @@ $(document).ready(function() {
   let prevUrl = '';
   let inactivitySwitch = 1;
   let inactivityLoop = 5000;
-  inactivityLoop = 3000;
+  // inactivityLoop = 3000;
 
   var target_date = 0; // set the countdown date
   var days, hours, minutes, seconds; // variables for time units
@@ -72,7 +72,7 @@ $(document).ready(function() {
       if(inactivitySwitch){
         inactivitySwitch = 0;
         target_date = new Date().getTime() + (1000*60*5);
-        target_date = new Date().getTime() + (1000*60*500);
+        // target_date = new Date().getTime() + (1000*60*500);
         //target date
         console.log(inactivityLoop);
         showModal();
