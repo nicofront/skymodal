@@ -17,6 +17,11 @@
 				</a>
 			</li>
 			<li>
+				<a href="modal-chile2.php">
+					Modal Chile 2
+				</a>
+			</li>
+			<li>
 				<a href="modal-brasil.php">
 					Modal Brasil
 				</a>

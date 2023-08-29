@@ -3,7 +3,12 @@ $(document).ready(function() {
   let prevUrl = '';
   let inactivitySwitch = 1;
   let inactivityLoop = 5000;
-  // inactivityLoop = 3000;
+  inactivityLoop = 300;
+
+  let brasil = ["Complete suas informações a seguir:", "Seu voo estará reservado e você poderá pagar quando quiser dentro do prazo que enviaremos para seu e-mail.", "Sim, quero garantir meu preço"]; 
+  let eng = ["Complete your information in the next:", "Your flight will be reserved and you can pay whenever you want within the period that we will send to your email.", "Yes, I want to guarantee my price"]; 
+
+  let modal1, modal2, modal3;
 
   var target_date = 0; // set the countdown date
   var days, hours, minutes, seconds; // variables for time units
@@ -72,7 +77,7 @@ $(document).ready(function() {
       if(inactivitySwitch){
         inactivitySwitch = 0;
         target_date = new Date().getTime() + (1000*60*5);
-        // target_date = new Date().getTime() + (1000*60*500);
+        target_date = new Date().getTime() + (1000*60*500);
         //target date
         console.log(inactivityLoop);
         showModal();
@@ -110,6 +115,25 @@ $(document).ready(function() {
 
   function showModal () {
 
+   let currUrl = window.location.href;
+   if(currUrl.indexOf("brasil") >= 0){
+    modal1 = document.getElementById('modaltext1');
+    modal2 = document.getElementById('modaltext2');
+    modal3 = document.getElementById('modaltext3');
+    modal1.innerHTML = brasil[0];
+    modal2.innerHTML = brasil[1];
+    modal3.innerHTML = brasil[2];
+   }
+
+   if(currUrl.indexOf("english") >= 0){
+    modal1 = document.getElementById('modaltext1');
+    modal2 = document.getElementById('modaltext2');
+    modal3 = document.getElementById('modaltext3');
+    modal1.innerHTML = eng[0];
+    modal2.innerHTML = eng[1];
+    modal3.innerHTML = eng[2];
+   }
+
    setInterval(function () { getCountdown(); }, 1000);
 
    document.addEventListener('click', function (event) {
@@ -117,6 +141,10 @@ $(document).ready(function() {
      if (! (event.target.matches('#modaltext3') || event.target.matches('#modalclose')) ) return;
      var modalReserva = document.getElementById("modal-reserva");
      modalReserva.classList.add("change");
+     var header = document.getElementsByClassName("sticky-header"); 
+     console.log(header[0]);
+     header[0].appendChild(modalReserva);
+
    }, false);
 
    setTimeout(() => {

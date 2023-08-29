@@ -3,6 +3,21 @@
 	height: 101vh;
 }
 
+.sticky-header2{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	background-color: green;
+	.header-inicial-sale{
+		font-family: 'Roboto';
+		font-size: 12px;
+		padding: 15px;
+	}
+}
+
 .modal{
 	font-family: 'Roboto';
 	position: fixed;
@@ -13,6 +28,7 @@
 	background: rgba(6, 6, 6, 0.7); 
 	display: none;
 	transition: .5s;
+	z-index: 100;
 	&.active{
 		display: inline-block;
 	}
@@ -54,6 +70,10 @@
 			img{
 				display: inline-block;
 				margin-bottom: 24px;
+				@media( max-width: 767px) {
+					max-width: 30px;
+					margin-bottom: 15px;
+				}
 			}
 			h3{
 				color: #525252;
@@ -63,6 +83,11 @@
 				margin-top: 0;
 				margin-bottom: 8px;
 				font-family: 'Roboto';
+				@media( max-width: 767px) {
+					font-size: 18px;
+					line-height: 22px;
+					margin-bottom: 5px;
+				}
 			}
 			h4{
 				margin: 0;
@@ -85,6 +110,11 @@
 				margin: 0 auto;
 				margin-bottom: 24px;
 				font-family: 'Roboto';
+				@media( max-width: 767px) {
+					font-size: 14px;
+					line-height: 17px;
+					margin-bottom: 15px;
+				}
 			}
 			button{
 				cursor: pointer;
@@ -97,23 +127,34 @@
 				line-height: 24px;
 				color: #fff;
 				max-width: 100%;
+				@media( max-width: 767px) {
+					font-size: 14px;
+					line-height: 17px;
+				}
 			}
 		}
 	}
 	&.change{
 		background: rgba(6, 6, 6, 0); 
+		position: relative;
+		height: auto;
 		.modal-block{
 			top: 0;
 			left: 0;
 			width: 100%;
 			transform: translate(0,0);
 			max-width: 100%;
+			position: relative;
+			display: block;
 			background-color: #f1e8f1;
 			.modal-block-head{
 				display: none;
 			}
 			.modal-block-body{
-				padding: 12px 17px;
+				padding: 12px 14px;
+				@media( max-width: 767px) {
+					padding: 8px 14px;
+				}
 				img{
 					display: none;
 				}
@@ -127,6 +168,9 @@
 					position: relative;
 					padding-left: 37px;
 					display: inline-block;
+					@media( max-width: 767px) {
+						font-size: 11px;
+					}
 					img{
 						position: absolute;
 						left: 0;
