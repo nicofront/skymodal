@@ -23,12 +23,9 @@
         Lorem ipsum dolor sit.
     </div>
 </div>
-<div class="modal" id="modal-reserva">
+<!-- <div class="modal" id="modal-reserva">
     <div class="modal-block">
         <div class="modal-block-head">
-            <!-- <h2 id="modaltext0">
-                Precio único
-            </h2> -->
             <img id="modalclose" src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD/SURBVHgB7ZXNCYQwEIUnXvS4JaSFLcESPIonK/PoMSVsC5ZgCTagbLJkQZf8vAkKi+RBkETnfZO/kSgrK+sfNI6jNO2KGBEz0Y+X7dZt284EgNEYAZhIOzTHzLgxBeGSxti3nA4wCSGWqqoWnyG67HI3PNPPbDzgqSzLummaNDiSQCoYgkcS6HUbUsAwPJDA0YwBZsFjCXDBRpzTTvaQ9U6joug5YDbcznxwvVvXVXEr4al7TkAh2guaue86bdv2tMCvPt+hKxCFh+5x13WT7tapCbArnOtUo5UQhnMrV0oC8GmP3WMLOGzBKT8WY4IWkJSYoJlS6nF1TFbWvfUGSx2upCxfcswAAAAASUVORK5CYII=" alt="Close">
         </div>
         <div class="modal-block-body">
@@ -39,10 +36,10 @@
             <div id="countdown">
               <h4>
                 <img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIbSURBVHgBpVY7UsMwEF2ZzMRlSmZozAkIJ8A+AcMJCCeAEmgiGkJJToA5AdwAcwJyA0QBQ5kyKYh4a6/AEfEnYWd2pEi7eqv16m0UbSDn2+exUuoQ0xgaWWt7vI61CeYTTO9vPm+yVb6K1hAARRjuBIgEZAqQKcaeAxZJoVcANhsBXu5c9u3CPsmhBgDjbrebaqOnXkAxdAjluQm2gqPr9+vJWoB8EABecjBF47Ab6jJQhY9mYM6AClTiQJVsPlEpTSKJ+w7Yf5WIOUWaWooDhZowDPc5yED23njRU+fk0pOuAuNDoVYOXxKxz9h/Npud8VpHNgZULW7vijaTE+grUnuKUQd1llz+VNwu86utrYhfxt+fC68WEFH1ZfpM/5Pcf/G16Hc4/xVGSeldGWoSRb2aXSNjFNDfYjHUBsDhBKp4Y5ZOL7YvjpvsO8jxbtWmPOQ8siqb0cfoEXZcGHeWbApQGn2O7j2z3J/fZO03BEs4hjios0PQKRXVSALq3zT3Z56tBWR24KgwjUu3bQOauPUS3Rkmko4sVjINohpTwRZM2kkTKM4yXqcYypinuZFpQEm38jsW1qEG0Ix+b8f2Aypup3mtFXl7nULDuZZ1dKR78/l8CPszaV/7jjjWak94uA8kbYcKqltiIAEaAIBpLPI7xVqALFIAGvpThTUNOIOebNyAPeAYwwAgewDpO2AMBhX6jDJ9rPqL8Q0l4SI9yeoEUAAAAABJRU5ErkJggg==" alt="Clock">
-                <span class="cd-mobile">Tienes</span>
+                <span class="cd-mobile" id="modaltext4">Tienes</span>
                 <span id="tiles">00:05:00</span>
-                <span class="cd-mobile">para completar tus datos y reservar tu vuelo</span>
-                <span class="cd-mobile cd-normal">(podrás pagar en el plazo que enviaremos a tu correo).</span>
+                <span class="cd-mobile" id="modaltext5">para completar tus datos y reservar tu vuelo</span>
+                <span class="cd-mobile cd-normal" id="modaltext6">(podrás pagar en el plazo que enviaremos a tu correo).</span>
               </h4>
             </div>
             <p id="modaltext2">
@@ -53,7 +50,7 @@
             </button>
         </div>
     </div>
-</div>
+</div> -->
     
     <script src="dist/js/all.js?cb=1615307255841"></script>
 </body>

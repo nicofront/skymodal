@@ -183,6 +183,9 @@
 						color: #000;
 						&.cd-normal{
 							font-weight: 400;
+							@media( max-width: 767px) {
+								display: none;
+							}
 						}
 					}
 				}
