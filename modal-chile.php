@@ -23,7 +23,7 @@
         Lorem ipsum dolor sit.
     </div>
 </div>
-<!-- <div class="modal" id="modal-reserva">
+<div class="modal" id="modal-reserva">
     <div class="modal-block">
         <div class="modal-block-head">
             <img id="modalclose" src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD/SURBVHgB7ZXNCYQwEIUnXvS4JaSFLcESPIonK/PoMSVsC5ZgCTagbLJkQZf8vAkKi+RBkETnfZO/kSgrK+sfNI6jNO2KGBEz0Y+X7dZt284EgNEYAZhIOzTHzLgxBeGSxti3nA4wCSGWqqoWnyG67HI3PNPPbDzgqSzLummaNDiSQCoYgkcS6HUbUsAwPJDA0YwBZsFjCXDBRpzTTvaQ9U6joug5YDbcznxwvVvXVXEr4al7TkAh2guaue86bdv2tMCvPt+hKxCFh+5x13WT7tapCbArnOtUo5UQhnMrV0oC8GmP3WMLOGzBKT8WY4IWkJSYoJlS6nF1TFbWvfUGSx2upCxfcswAAAAASUVORK5CYII=" alt="Close">
@@ -50,7 +50,7 @@
             </button>
         </div>
     </div>
-</div> -->
+</div>
     
     <script src="dist/js/all.js?cb=1615307255841"></script>
 </body>
