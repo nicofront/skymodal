@@ -84,7 +84,7 @@
             font-size: 20px;
             line-height: 26px;
         }
-        .subtitle2{
+        .text16{
             font-size: 16px;
             line-height: 18px;
         }
@@ -109,6 +109,9 @@
             border: none;
             text-align: center;
             display: inline-block;
+        }
+        .table{
+            width: 100%;
         }
     </style>
 </head>
@@ -137,11 +140,53 @@
     <p class="text mt-0 mb-20 c-grey">
         Itinerario
     </p>
+    <table class="table mb-24">
+        <tr>
+            <td class="text16 c-purple fw-700">
+                Vuelo Ida:
+            </td>
+            <td class="text16 c-purple fw-700">
+                Medellín
+            </td>
+            <td class="text16 c-purple">
+                | 17/03/2023 19:20
+            </td>
+            <td class="text16 c-purple">
+                &rarr;
+            </td>
+            <td class="text16 c-purple fw-700">
+                Santiago
+            </td>
+            <td class="text16 c-purple">
+                | 17/03/2023 19:20
+            </td>
+        </tr>
+        <tr>
+            <td class="text16 c-purple fw-700">
+                Vuelo Ida:
+            </td>
+            <td class="text16 c-purple fw-700">
+                SCL
+            </td>
+            <td class="text16 c-purple">
+                | 20:00
+            </td>
+            <td class="text16 c-purple">
+                &rarr;
+            </td>
+            <td class="text16 c-purple fw-700">
+                CCP
+            </td>
+            <td class="text16 c-purple">
+                | 19:20
+            </td>
+        </tr>
+    </table>
     <hr class="hr mb-24 mt-0">
     <p class="small t-center mt-0 mb-8 c-pink fw-700">
         Realizaste la reserva el 25/07/2023 a las 09:00 hrs.
     </p>
-    <h3 class="fw-700 c-grey subtitle2 mt-0 mb-24 t-center">
+    <h3 class="fw-700 c-grey text16 mt-0 mb-24 t-center">
         ¡No pierdas esta tarifa y completa el pago!
     </h3>
     <div class="t-center">
@@ -157,7 +202,7 @@
     </p>
 </div>
 <div class="card mb-20">
-    <h3 class="subtitle2 c-purple fw-700 mt-0 mb-15 t-center">
+    <h3 class="text16 c-purple fw-700 mt-0 mb-15 t-center">
         No olvides que:
     </h3>
     <div class="block">
