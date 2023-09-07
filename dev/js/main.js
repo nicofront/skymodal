@@ -11,11 +11,10 @@ $(document).ready(function() {
   let eng = ["Complete your information in the next:", "Your flight will be reserved and you can pay whenever you want within the period that we will send to your email.", "Yes, I want to guarantee my price", "You have ", " to complete your details and book your flight", " (you can pay in the term that we will send to your email)"]; 
 
   let modal1, modal2, modal3, modal4, modal5, modal6;
+  let clock;
 
   var target_date = 0; // set the countdown date
   var days, hours, minutes, seconds; // variables for time units
-
-  target_date = new Date().getTime() + (1000*60*5) + (1000*7);
 
   function getCurrentURL () {
     return window.location.href;
@@ -40,6 +39,7 @@ $(document).ready(function() {
     }
     if(!current_url.endsWith('flujo-compra/pago')){
       modalDiv.classList.remove("active");
+      clearInterval(clock);
     }else{
       modalDiv.classList.add("active");
     }
@@ -123,7 +123,8 @@ $(document).ready(function() {
     modal6.innerHTML = eng[5];
    }
 
-   setInterval(function () { getCountdown(); }, 1000);
+   target_date = new Date().getTime() + (1000*60*5) + (1000*1);
+   clock = setInterval(function () { getCountdown(); }, 1000);
 
    document.addEventListener('click', function (event) {
      const elem = document.getElementById("modal-reserva");
