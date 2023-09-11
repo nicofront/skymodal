@@ -22,6 +22,9 @@
         .t-center{
             text-align: center;
         }
+        .t-right{
+            text-align: right;
+        }
         .mt-0{
             margin-top: 0;
         }
@@ -110,8 +113,19 @@
             text-align: center;
             display: inline-block;
         }
+        .card-table{
+            background-color: #f1f1f1;
+            padding: 16px;
+        }
         .table{
             width: 100%;
+        }
+        .table td{
+            padding: 4px 0;
+        }
+        .table-total{
+            width: 100%;
+            background-color: #fdf2f9;
         }
     </style>
 </head>
@@ -140,45 +154,42 @@
     <p class="text mt-0 mb-20 c-grey">
         Itinerario
     </p>
-    <table class="table mb-24">
+    <div class="card-table mb-12">
+        <p class="text16 c-grey mt-0 mb-12">
+            Vuelo Ida: <span>Martes 3 de Octubre</span>
+        </p>
+        <table class="table">
+            <tr>
+                <td class="text16 c-purple">
+                    x
+                </td>
+                <td class="text16 c-purple">
+                    19:20
+                </td>
+                <td class="text16 c-purple fw-700">
+                    Santiago
+                </td>
+            </tr>
+            <tr>
+                <td class="text16 c-purple">
+                    x
+                </td>
+                <td class="text16 c-purple">
+                    21:20
+                </td>
+                <td class="text16 c-purple fw-700">
+                    Buenos Aires Aeroparque
+                </td>
+            </tr>
+        </table>
+    </div>
+    <table class="table-total mb-24">
         <tr>
-            <td class="text16 c-purple fw-700">
-                Vuelo Ida:
+            <td class="subtitle c-pink fw-700">
+                Total:
             </td>
-            <td class="text16 c-purple fw-700">
-                Medellín
-            </td>
-            <td class="text16 c-purple">
-                | 17/03/2023 19:20
-            </td>
-            <td class="text16 c-purple">
-                &rarr;
-            </td>
-            <td class="text16 c-purple fw-700">
-                Santiago
-            </td>
-            <td class="text16 c-purple">
-                | 17/03/2023 19:20
-            </td>
-        </tr>
-        <tr>
-            <td class="text16 c-purple fw-700">
-                Vuelo Ida:
-            </td>
-            <td class="text16 c-purple fw-700">
-                SCL
-            </td>
-            <td class="text16 c-purple">
-                | 20:00
-            </td>
-            <td class="text16 c-purple">
-                &rarr;
-            </td>
-            <td class="text16 c-purple fw-700">
-                CCP
-            </td>
-            <td class="text16 c-purple">
-                | 19:20
+            <td class="subtitle t-right c-pink fw-700">
+                $1.000.000
             </td>
         </tr>
     </table>
