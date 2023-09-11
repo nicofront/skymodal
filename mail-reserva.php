@@ -72,7 +72,7 @@
         .card{
             font-family: 'Arial';
             display: block;
-            padding: 24px 30px;
+            padding: 24px 20px;
             background-color: #fff;
         }
         .block{
@@ -122,10 +122,21 @@
         }
         .table td{
             padding: 4px 0;
+            vertical-align: top;
+        }
+        .td-smaller{
+            width: 30px;
+        }
+        .td-small{
+            width: 60px;
         }
         .table-total{
             width: 100%;
             background-color: #fdf2f9;
+            padding: 10px 12px;
+        }
+        .legal{
+            padding: 0 20px;
         }
     </style>
 </head>
@@ -156,14 +167,14 @@
     </p>
     <div class="card-table mb-12">
         <p class="text16 c-grey mt-0 mb-12">
-            Vuelo Ida: <span>Martes 3 de Octubre</span>
+            Vuelo Ida: <span class="fw-700">Martes 3 de Octubre</span>
         </p>
         <table class="table">
             <tr>
-                <td class="text16 c-purple">
-                    x
+                <td class="text16 c-purple td-smaller">
+                    <img src="dist/img/mail-circle1.png" alt="Origen">
                 </td>
-                <td class="text16 c-purple">
+                <td class="text16 c-purple td-small">
                     19:20
                 </td>
                 <td class="text16 c-purple fw-700">
@@ -171,10 +182,20 @@
                 </td>
             </tr>
             <tr>
-                <td class="text16 c-purple">
-                    x
+                <td class="text16 c-purple td-smaller">
+                    <img src="dist/img/mail-line.png" alt="Vuelo">
                 </td>
-                <td class="text16 c-purple">
+                <td class="text16 c-purple td-small">
+                </td>
+                <td class="small c-grey">
+                    Duración del viaje: 2 h
+                </td>
+            </tr>
+            <tr>
+                <td class="text16 c-purple td-smaller">
+                    <img src="dist/img/mail-circle2.png" alt="Destino">
+                </td>
+                <td class="text16 c-purple td-small">
                     21:20
                 </td>
                 <td class="text16 c-purple fw-700">
@@ -240,7 +261,7 @@
         Si tu pago seleccionado es mediante <span class="fw-700">Banco Estado</span> (presencial o transferencia bancaria) deberás seguir las instrucciones enviadas a tu e-mail.
     </p>
 </div>
-<p class="mt-0 mb-20 t-center c-grey smaller f-arial">
+<p class="mt-0 mb-20 t-center c-grey smaller f-arial legal">
     El total de tu compra se podría visualizar en dólares pero la compra se realizará en moneda local.
 </p>
     
