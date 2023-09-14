@@ -326,15 +326,17 @@
             </div>
         </div>
         <div class="card mb-20">
-            <p class="smaller c-purple mt-0 fw-700 mb-8">
+            <p class="smaller c-purple mt-0 fw-700 mb-8 t-center">
                 Si tuviste algún problema con el pago, puedes retomar tu compra con validez hasta , tiempo durante el cual mantendremos la tarifa de la reserva generada.
             </p>
-            <p class="smaller c-grey mt-0 fw-700 mb-12">
+            <p class="smaller c-grey mt-0 fw-700 mb-12 t-center">
                 Reserva válida hasta las 18:00 hrs. del día 27/07/2023.
             </p>
-            <a href="" class="button text mb-24">
-                Ir al pago
-            </a>
+            <div class="t-center">
+                <a href="" class="button text mb-24">
+                    Ir al pago
+                </a>
+            </div>
             <hr class="hr mb-24 mt-0">
             <p class="smaller c-grey t-center mt-0 mb-0">
                 Si tu pago seleccionado es mediante <span class="fw-700">Banco Estado</span> (presencial o transferencia bancaria) deberás seguir las instrucciones enviadas a tu e-mail.
