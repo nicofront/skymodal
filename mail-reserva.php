@@ -87,13 +87,19 @@
         .card{
             font-family: 'Arial';
             display: block;
-            padding: 24px 20px;
             background-color: #fff;
             border-radius: 5px;
+            border-top: 24px solid #fff;
+            border-bottom: 24px solid #fff;
+            border-left: 20px solid #fff;
+            border-right: 20px solid #fff;
         }
         .card-block{
-            background: rgba(120, 24, 120, 0.05); 
-            padding: 12px;
+            background: #f8f3f8; 
+            border-top: 12px solid #f8f3f8;
+            border-bottom: 12px solid #f8f3f8;
+            border-left: 12px solid #f8f3f8;
+            border-right: 12px solid #f8f3f8;
         }
         .title{
             font-size: 23px; 
@@ -120,7 +126,6 @@
             line-height: 15px;
         }
         .button{
-            padding: 10px;
             border-radius: 5px;
             background: #FC199A; 
             color: #fff;
@@ -128,10 +133,24 @@
             border: none;
             text-align: center;
             display: inline-block;
+            border-top: 10px solid #FC199A;
+            border-bottom: 10px solid #FC199A;
+            border-left: 10px solid #FC199A;
+            border-right: 10px solid #FC199A;
+        }
+        .bb-12{
+            border-bottom: 12px solid #f1f1f1;
+            background: #f1f1f1;
         }
         .card-table{
             background-color: #f1f1f1;
-            padding: 16px;
+            border-top: 16px solid #f1f1f1;
+            border-bottom: 16px solid #f1f1f1;
+            border-left: 16px solid #f1f1f1;
+            border-right: 16px solid #f1f1f1;
+        }
+        .card-table .table{
+            background-color: #f1f1f1;
         }
         .table{
             width: 100%;
@@ -150,18 +169,24 @@
             padding: 0 4px;
         }
         .table-total{
-            width: 100%;
             background-color: #fdf2f9;
-        }
-        .table-total td{
-            padding: 10px 12px;
+            border-top: 10px solid #fdf2f9;
+            border-bottom: 10px solid #fdf2f9;
+            border-left: 12px solid #fdf2f9;
+            border-right: 12px solid #fdf2f9;
         }
         .legal{
-            padding-left: 20px;
-            padding-right: 20px;
+            border-top: 20px solid #f1f1f1;
+            border-bottom: 30px solid #f1f1f1;
+            border-left: 20px solid #f1f1f1;
+            border-right: 20px solid #f1f1f1;
+        }
+        .footer{
+            border: none;
         }
         .footer img, .logo{
             width: 100%;
+            border: none;
         }
     </style>
 </head>
@@ -171,7 +196,7 @@
 <div class="body">
     <div class="wrapper pt-36">
         <div class="card mb-20">
-            <img src="dist/img/sky-logo.png" alt="SKY" class="logo">
+            <img src="https://mcusercontent.com/5025e05b68556ad574693547c/images/428ef9ba-1276-b1c0-c570-561949c8a988.png" alt="SKY" class="logo">
             <hr class="hr mb-24">
             <h2 class="title c-purple fw-700 mb-12 mt-0">
                 Hola, ${visitor.firstname}!
@@ -195,13 +220,13 @@
                 Itinerario
             </p>
             <div class="card-table mb-12">
-                <p class="text16 c-grey mt-0 mb-12">
+                <p class="text16 c-grey mt-0 mb-0 bb-12">
                     Vuelo Ida: <span class="fw-700">Martes 3 de Octubre</span>
                 </p>
                 <table class="table">
                     <tr>
                         <td class="text16 c-purple td-smaller">
-                            <img src="dist/img/mail-circle1.png" alt="O">
+                            <img src="https://mcusercontent.com/5025e05b68556ad574693547c/images/2f35fe71-98af-fd83-aa96-b8fb1b1dae85.png" alt="O">
                         </td>
                         <td class="text16 c-purple td-small">
                             19:20
@@ -212,7 +237,7 @@
                     </tr>
                     <tr>
                         <td class="text16 c-purple td-smaller">
-                            <img src="dist/img/mail-line.png" alt="V">
+                            <img src="https://mcusercontent.com/5025e05b68556ad574693547c/images/3d173703-0ad2-b74d-cb8c-a43ef0614749.png" alt="V">
                         </td>
                         <td class="text16 c-purple td-small">
                         </td>
@@ -222,7 +247,7 @@
                     </tr>
                     <tr>
                         <td class="text16 c-purple td-smaller">
-                            <img src="dist/img/mail-circle2.png" alt="D">
+                            <img src="https://mcusercontent.com/5025e05b68556ad574693547c/images/2eadb05c-28c2-24e4-945d-61c35c53a366.png" alt="D">
                         </td>
                         <td class="text16 c-purple td-small">
                             21:20
@@ -234,13 +259,13 @@
                 </table>
             </div>
             <div class="card-table mb-12">
-                <p class="text16 c-grey mt-0 mb-12">
+                <p class="text16 c-grey mt-0 mb-0 bb-12">
                     Vuelo Vuelta: <span class="fw-700">Martes 3 de Octubre</span>
                 </p>
                 <table class="table">
                     <tr>
                         <td class="text16 c-purple td-smaller">
-                            <img src="dist/img/mail-circle1.png" alt="0">
+                            <img src="https://mcusercontent.com/5025e05b68556ad574693547c/images/2f35fe71-98af-fd83-aa96-b8fb1b1dae85.png" alt="0">
                         </td>
                         <td class="text16 c-purple td-small">
                             19:20
@@ -251,7 +276,7 @@
                     </tr>
                     <tr>
                         <td class="text16 c-purple td-smaller">
-                            <img src="dist/img/mail-line.png" alt="V">
+                            <img src="https://mcusercontent.com/5025e05b68556ad574693547c/images/3d173703-0ad2-b74d-cb8c-a43ef0614749.png" alt="V">
                         </td>
                         <td class="text16 c-purple td-small">
                         </td>
@@ -261,7 +286,7 @@
                     </tr>
                     <tr>
                         <td class="text16 c-purple td-smaller">
-                            <img src="dist/img/mail-circle1.png" alt="D">
+                            <img src="https://mcusercontent.com/5025e05b68556ad574693547c/images/2eadb05c-28c2-24e4-945d-61c35c53a366.png" alt="D">
                         </td>
                         <td class="text16 c-purple td-small">
                             21:20
@@ -272,16 +297,18 @@
                     </tr>
                 </table>
             </div>
-            <table class="table-total mb-24">
-                <tr>
-                    <td class="subtitle c-pink fw-700">
-                        Total:
-                    </td>
-                    <td class="subtitle t-right c-pink fw-700">
-                        $1.000.000
-                    </td>
-                </tr>
-            </table>
+            <div class="table-total mb-24">
+                <table class="table">
+                    <tr>
+                        <td class="subtitle c-pink fw-700">
+                            Total:
+                        </td>
+                        <td class="subtitle t-right c-pink fw-700">
+                            $1.000.000
+                        </td>
+                    </tr>
+                </table>
+            </div>
             <hr class="hr mb-24 mt-0">
             <p class="small t-center mt-0 mb-8 c-pink fw-700">
                 Realizaste la reserva el 25/07/2023 a las 09:00 hrs.
@@ -306,7 +333,7 @@
                 <table class="m-auto">
                     <tr>
                         <td>
-                            <img src="dist/img/mail-info.png" alt="Info">
+                            <img src="https://mcusercontent.com/5025e05b68556ad574693547c/images/7655ecf5-6466-5e8f-2331-c08652415f81.png" alt="Info">
                         </td>
                         <td>
                             <h3 class="text16 c-purple fw-700 mb-0 mt-0 t-center">
@@ -342,8 +369,8 @@
                 Si tu pago seleccionado es mediante <span class="fw-700">Banco Estado</span> (presencial o transferencia bancaria) deberás seguir las instrucciones enviadas a tu e-mail.
             </p>
         </div>
-        <div class="footer mb-20">
-            <img src="dist/img/footer.png" alt="Footer">
+        <div class="footer">
+            <img src="https://mcusercontent.com/5025e05b68556ad574693547c/images/1a2ec437-6d76-c923-3941-9166306e8eef.png" alt="Footer">
         </div>
         <p class="mt-0 pb-24 t-center c-grey smaller f-arial legal">
             El total de tu compra se podría visualizar en dólares pero la compra se realizará en moneda local.
