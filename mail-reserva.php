@@ -242,7 +242,6 @@
                         <td class="text16 c-purple td-small">
                         </td>
                         <td class="small c-grey">
-                            Duración del viaje: 2 h
                         </td>
                     </tr>
                     <tr>
@@ -281,7 +280,6 @@
                         <td class="text16 c-purple td-small">
                         </td>
                         <td class="small c-grey">
-                            Duración del viaje: 2 h
                         </td>
                     </tr>
                     <tr>
